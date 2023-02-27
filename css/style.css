@@ -77,11 +77,6 @@ nav {
     color: white;
 }
 
-.about_container {
-    /* debug */
-    /* height: 500px; */
-}
-
 .star_logo_white::before, .star_logo_white::after {
     content: '';
     display: inline-block;
@@ -95,4 +90,15 @@ nav {
     padding: 10px;
     margin: 0 auto;
     width: 150px;
+}
+
+/* Contact */
+.contact .col-12,.col-4 {
+    border-bottom: 1px solid grey;
+}
+
+.send_btn {
+    background-color: var(--bg-primary);
+    color: white;
+    padding: 15px;
 }
