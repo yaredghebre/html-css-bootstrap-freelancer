@@ -7,10 +7,6 @@
 }
 
 /* RESET */
-body {
-    /* background-color: aqua; */
-}
-
 img {
     max-width: 100%;
 }
@@ -107,4 +103,9 @@ nav {
 .details {
     color: white;
     background-color: var(--bg-section);
+}
+
+.copyright {
+    color: white;
+    background-color: var(--bg-secondary);
 }
