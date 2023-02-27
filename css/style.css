@@ -1,6 +1,14 @@
+/* VARIABLES */
+/* Colors */
+:root {
+    --bg-primary: #1abc9c;
+    --bg-secondary: #2c3e50;
+    --bg-section: #3a546d;
+}
+
 /* RESET */
 body {
-    font-family: 'Roboto', sans-serif;
+    /* background-color: aqua; */
 }
 
 img {
@@ -12,6 +20,25 @@ a {
     color: inherit;
 }
 
-li {
+ul {
     list-style-type: none;
 }
+
+/* UTILITIES */
+.gap-10 {
+    gap: 10px;
+}
+
+/* HEADER */
+nav {
+    height: 100px;
+    background-color: var(--bg-secondary);
+    line-height: 100px;
+    color: white;
+}
+
+.header_hamburger i{
+    padding: 3px;
+    border: 1px solid white;
+}
+
