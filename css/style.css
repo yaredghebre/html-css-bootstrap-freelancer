@@ -47,18 +47,26 @@ nav {
 .jumbotron {
     background-color: var(--bg-primary);
     color: white;
-    /* debug */
-    height: 500px;
 }
 
 .jt_logo_container {
     height: 200px;
 }
 
-.star_logo::before, .star_logo::after {
+.star_logo_white::before, .star_logo_white::after {
     content: '';
     display: inline-block;
     width: 100px;
     height: 5px;
     background-color: white;
+}
+
+/* MAIN */
+/* Portfolio */
+.star_logo_black::before, .star_logo_black::after {
+    content: '';
+    display: inline-block;
+    width: 100px;
+    height: 5px;
+    background-color: black;
 }
