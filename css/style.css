@@ -102,3 +102,9 @@ nav {
     color: white;
     padding: 15px;
 }
+
+/* FOOTER */
+.details {
+    color: white;
+    background-color: var(--bg-section);
+}
