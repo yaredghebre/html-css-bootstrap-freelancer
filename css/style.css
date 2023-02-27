@@ -70,3 +70,29 @@ nav {
     height: 5px;
     background-color: black;
 }
+
+/* About */
+.about {
+    background-color: var(--bg-primary);
+    color: white;
+}
+
+.about_container {
+    /* debug */
+    /* height: 500px; */
+}
+
+.star_logo_white::before, .star_logo_white::after {
+    content: '';
+    display: inline-block;
+    width: 100px;
+    height: 5px;
+    background-color: white;
+}
+
+.download_btn {
+    border: 1px solid white;
+    padding: 10px;
+    margin: 0 auto;
+    width: 150px;
+}
