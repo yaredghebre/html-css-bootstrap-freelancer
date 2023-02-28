@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Custom Style -->
@@ -16,25 +16,23 @@
     <!-- HEADER -->
     <header>
         <!-- Nav -->
-        <nav>
-            <div class="header_nav container d-flex align-items-center justify-content-between">
-                <a class="start_boot">
-                    <h2>START BOOTSTRAP</h2>
-                </a>
-                
-                <a class="header_hamburger d-block d-sm-none">
-                    <i class="fa-solid fa-bars "></i>
-                </a>
-                <div class="header_menu d-none d-sm-block">
-                  <ul class="d-flex gap-10">
-                    <li><a href="">PORTFOLIO</a></li>
-                    <li><a href="">ABOUT</a></li>
-                    <li><a href="">CONTACT</a></li>
-                  </ul>
-                </div>
-            </div>
-        </nav>
-        
+        <div class="nav_container">
+            <nav class="navbar navbar-expand-md p-3 d-flex justify-content-between container">
+                <a class="navbar-brand" href="#">START BOOTSTRAP</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="header_menu d-none d-md-block ">
+                    <ul class="d-flex gap-10 ">
+                      <li><a href="">PORTFOLIO</a></li>
+                      <li><a href="">ABOUT</a></li>
+                      <li><a href="">CONTACT</a></li>
+                    </ul>
+                  </div>
+              </nav>
+        </div>
+
         <!-- Jumbotron -->
         <section class="jumbotron">
             <div class="jumbotron_container text-center container p-4">
@@ -46,7 +44,6 @@
                 <p class="mt-3">GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR</p>
             </div>
         </section>
-        
     </header>
     <!-- /HEADER -->
 
@@ -59,22 +56,22 @@
                 <div class="star_logo_black"><i class="fa-solid fa-star fa-2x "></i></div>
             </div>
             <div class="row text-center gy-5 p-3">
-                <div class="col-12 col-lg-6 col-xxl-4">
+                <div class="col-12 col-md-6 col-lg-4">
                     <img class="rounded" src="img/cake.png" alt="">
                 </div>
-                <div class="col-12 col-lg-6 col-xxl-4">
+                <div class="col-12 col-md-6 col-lg-4">
                     <img class="rounded" src="img/cabin.png" alt="">
                 </div>
-                <div class="col-12 col-lg-6 col-xxl-4">
+                <div class="col-12 col-md-6 col-lg-4">
                     <img class="rounded" src="img/circus.png" alt="">
                 </div>
-                <div class="col-12 col-lg-6 col-xxl-4">
+                <div class="col-12 col-md-6 col-lg-4">
                     <img class="rounded" src="img/game.png" alt="">
                 </div>
-                <div class="col-12 col-lg-6 col-xxl-4">
+                <div class="col-12 col-md-6 col-lg-4">
                     <img class="rounded" src="img/safe.png" alt="">
                 </div>
-                <div class="col-12 col-lg-6 col-xxl-4">
+                <div class="col-12 col-md-6 col-lg-4">
                     <img class="rounded" src="img/submarine.png" alt="">
                 </div>
             </div>
@@ -84,28 +81,58 @@
                 <h3 class="mb-3 text-center">ABOUT</h3>
                 <div class="star_logo_white text-center d-block mb-3"><i class="fa-solid fa-star fa-2x "></i></div>
                 <div class="row gy-2 p-3">
-                    <div class="col-12 col-lg-6">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi veniam nostrum nemo eveniet dicta. Et mollitia doloremque a maxime beatae reiciendis. Hic incidunt ipsa minus animi tempore a maiores fuga!</p> 
+                    <div class="col-12 col-md-6">
+                        <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p> 
                     </div>
-                    <div class="col-12 col-lg-6">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi veniam nostrum nemo eveniet dicta. Et mollitia doloremque a maxime beatae reiciendis. Hic incidunt ipsa minus animi tempore a maiores fuga!</p> 
+                    <div class="col-12 col-md-6">
+                        <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looing to share your projects, this template is the perfect starting point!</p> 
                     </div>
                 </div>
-                <div class="download_btn text-center"><i class="fa-solid fa-download fa-lg"></i> Download</div>
+                <a href="" class="download_btn text-center d-block rounded"><i class="fa-solid fa-download fa-lg"></i> Download</a>
             </div>
         </section>
         <section class="contact">
-            <div class="contact_container p-5 container">
-                <h3 class="mb-3 text-center">CONTACT ME</h3>
-                <div class="star_logo_black d-block text-center mb-3"><i class="fa-solid fa-star fa-2x "></i></div>
+            <!-- <div class="contact_container p-5 container">
+                
                 <div class="row gy-4 mt-3 mb-3">
                     <div class="col-12 p-3">Name</div>
                     <div class="col-12 p-3">Email Address</div>
                     <div class="col-12 p-3">Phone Number</div>
-                    <div class="col-4 p-3">Message</div>
+                    <div class="col-1 p-3">Message</div>
                 </div>
-                <div class="send_btn rounded text-center d-inline-block">Send</div>
-            </div>
+                <button type="button" class="btn btn-info">Send</button>
+
+            </div> -->
+            <h3 class="mb-3 text-center mt-3">CONTACT ME</h3>
+            <div class="star_logo_black d-block text-center mb-3"><i class="fa-solid fa-star fa-2x "></i></div>
+            <form class="container p-5">
+                <div class="form-group">
+                    <label for="Name" class="form-label">Name</label>
+                    <input 
+                    type="text"
+                    class="form-control"
+                    id="Name"/>
+                </div>
+                <div class="form-group">
+                    <label for="Email" class="form-label">Email Address</label>
+                    <input 
+                    type="email"
+                    class="form-control"
+                    id="Email"/>
+                </div>
+                <div class="form-group">
+                    <label for="Number" class="form-label">Phone Number</label>
+                    <input 
+                    type="number"
+                    class="form-control"
+                    id="Number"/>
+                </div>
+                <div class="form-group">
+                    <label for="Text" class="form-label">Message</label>
+                    <textarea class="form-control" id="Text" rows="5"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary mt-3 ms_btn">Send</button>
+            </form>
         </section>
     </main>
     <!-- /MAIN -->
@@ -115,9 +142,9 @@
         <div class="details">
             <div class="details_container text-center p-5 container">
                 <div class="row gy-3">
-                    <div class="col-12 col-lg-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet minus fuga iure suscipit cumque dolores odit quis, facere, nobis inventore error minima perspiciatis expedita aliquam? Provident at veritatis quisquam dignissimos.</div>
-                    <div class="col-12 col-lg-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet minus fuga iure suscipit cumque dolores odit quis, facere, nobis inventore error minima perspiciatis expedita aliquam? Provident at veritatis quisquam dignissimos.</div>
-                    <div class="col-12 col-lg-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet minus fuga iure suscipit cumque dolores odit quis, facere, nobis inventore error minima perspiciatis expedita aliquam? Provident at veritatis quisquam dignissimos.</div>
+                    <div class="col-12 col-md-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet minus fuga iure suscipit cumque dolores odit quis, facere, nobis inventore error minima perspiciatis expedita aliquam? Provident at veritatis quisquam dignissimos.</div>
+                    <div class="col-12 col-md-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet minus fuga iure suscipit cumque dolores odit quis, facere, nobis inventore error minima perspiciatis expedita aliquam? Provident at veritatis quisquam dignissimos.</div>
+                    <div class="col-12 col-md-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet minus fuga iure suscipit cumque dolores odit quis, facere, nobis inventore error minima perspiciatis expedita aliquam? Provident at veritatis quisquam dignissimos.</div>
                 </div>
             </div>
         </div>
