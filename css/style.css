@@ -32,11 +32,18 @@ ul {
     background-color: var(--bg-secondary);
     color: white;
 }
+.navbar-toggler {   
+    border-color: white;
+}
 
-.navbar-brand,
-.navbar-toggler-icon {
+.navbar_toggler-icon {
     color: white;
 }
+
+.navbar-brand {
+    color: white;
+}
+
 
 @media screen and (min-width: 992px) {
     .navbar {
@@ -54,13 +61,18 @@ ul {
 .jt_logo_container {
     height: 200px;
 }
+.star_logo_white,
+.star_logo_black {
+    font-size: 1.5rem;
+}
 
 .star_logo_white::before, .star_logo_white::after {
     content: '';
     display: inline-block;
     width: 100px;
-    height: 5px;
+    height: 50px;
     background-color: white;
+    vertical-align: middle;
 }
 
 /* MAIN */
@@ -71,6 +83,7 @@ ul {
     width: 100px;
     height: 5px;
     background-color: black;
+
 }
 
 @media screen and (min-width: 1200px) {
